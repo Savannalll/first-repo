@@ -11,7 +11,7 @@ library(tidyverse)
 library(ggplot2)
 
 ggplot(data=storms)+
-  geom_point(mapping = aes(x = pressure, y = wind, color = 'green')) + 
+  geom_point(mapping = aes(x = pressure, y = wind)color = 'blue') + 
   facet_wrap(~category)
   facet_grid(month~year)
 
